@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page background */
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #89f7fe, #66a6ff);
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Card */
+.container{
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 45px 55px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.3);
+    animation: fadeIn 0.8s ease;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Counter */
+#counter{
+    font-size: 70px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 8px;
+}
+
+/* Label */
+h2{
+    font-size: 20px;
+    margin-bottom: 35px;
+    color: mediumslateblue;
+     
+
+}
+
+#label{
+    color: black;
+    font-weight: bold;
+}
+
+/* Buttons container */
+.buttons{
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+}
+
+/* Buttons */
+button{
+    font-size: 18px;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+/* Button colors */
+button:nth-child(1){
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+button:nth-child(2){
+    background: linear-gradient(135deg, #f1c40f, #f39c12);
+    color: #333;
+}
+
+button:nth-child(3){
+    background: linear-gradient(135deg, #ff6b6b, #ee5253);
+}
+
+/* Hover effect */
+button:hover{
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+/* Active click effect */
+button:active{
+    transform: scale(0.95);
+}
+
+
+
+#labelBtn{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6c5ce7, #5f27cd);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* vertical center */
+    align-items: center;       /* horizontal center */
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.25);
+    gap: 2px;
+}
+
+.label-center{
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    margin: 25px 0;            /* counter & buttons-এর মাঝে space */
+}
+
+
